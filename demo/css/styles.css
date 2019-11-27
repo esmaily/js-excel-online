@@ -1,0 +1,50 @@
+
+ /*
+ --------------------------------------------------------------------------------------------------------------------------------------------
+    custom   styles
+ --------------------------------------------------------------------------------------------------------------------------------------------
+ */
+.yield{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+.create-fleet{
+    flex:1% 1 1
+}
+.fleet-list{
+    flex:25% 1 1
+}
+.operation-btn{
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+}
+ .operation-btn .btn-item{
+    flex: 30% 1 1 ;
+    text-align: center;
+}
+
+ .ds-input-group  .input-group {
+    float: left !important;
+     padding: 0 1% !important;
+ }
+ /*.input-group .form-group label{*/
+ /*    flex: 20% 1 1 ;*/
+ /*}*/
+ /*.input-group .form-group input{*/
+ /*    flex: 80% 1 1 ;*/
+ /*}*/
+.checkbox-input{
+    /*outline: 1px solid #333;*/
+}
+ .checkbox-item{
+     display: flex;
+     flex-flow: row-reverse;
+ }
+ .checkbox-item label{
+
+ }
+ .force-p-0{
+     padding: 0 !important;
+ }
