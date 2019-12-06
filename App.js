@@ -20,7 +20,7 @@ App.prototype.ajax=async function(data={}){
     * ne browsers support
     */
     try {
-        const rawResponse =  await fetch("../jafar/api_route.php",
+        const rawResponse =  await fetch("./api.php",
             {
                 headers: {
                     'Accept': 'application/json',
