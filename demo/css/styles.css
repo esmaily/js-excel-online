@@ -1,13 +1,20 @@
 
- /*
- --------------------------------------------------------------------------------------------------------------------------------------------
-    custom   styles
- --------------------------------------------------------------------------------------------------------------------------------------------
- */
+/*
+--------------------------------------------------------------------------------------------------------------------------------------------
+   custom   styles
+--------------------------------------------------------------------------------------------------------------------------------------------
+*/
 .yield{
     display: flex;
     justify-content: center;
     flex-flow: column;
+}
+.table{
+    border: 1px solid #707070 !important;
+}
+.form-control{
+    border-radius: 22px !important;
+    border: 1px solid #8a8a8a !important;
 }
 .create-fleet{
     flex:1% 1 1
@@ -20,31 +27,164 @@
     justify-content: center;
     flex-flow: row;
 }
- .operation-btn .btn-item{
+.operation-btn .btn-item{
     flex: 30% 1 1 ;
     text-align: center;
 }
-
- .ds-input-group  .input-group {
-    float: left !important;
-     padding: 0 1% !important;
- }
- /*.input-group .form-group label{*/
- /*    flex: 20% 1 1 ;*/
- /*}*/
- /*.input-group .form-group input{*/
- /*    flex: 80% 1 1 ;*/
- /*}*/
-.checkbox-input{
-    /*outline: 1px solid #333;*/
+.operation-btn .btn-item .btn{
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
 }
- .checkbox-item{
-     display: flex;
-     flex-flow: row-reverse;
- }
- .checkbox-item label{
+.operation-btn .btn-item .btn-duplicate{
+    background-color: #25bfd7;
+}
+.btn-remove{
+    background-color: #fe2c39;
+}
+.panel-body .input-group {
+    border-radius: 22px !important;
+    background-color: #fe2c39;
+    color: #fff;
+}
+.input-group  .input-group-addon{
+    border-radius: 22px !important;
+    background-color: #fe2c39;
+    border: 0;
+    color: #fff;
+}
+.input-group input,.input-group select{
+    border-left: 0 !important;
 
- }
- .force-p-0{
-     padding: 0 !important;
- }
+}
+.ds-input-group  .input-group {
+    float: left !important;
+    padding: 0 1% !important;
+}
+/*.input-group .form-group label{*/
+/*    flex: 20% 1 1 ;*/
+/*}*/
+/*.input-group .form-group input{*/
+/*    flex: 80% 1 1 ;*/
+/*}*/
+
+.checkbox-item{
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.force-p-0{
+    padding: 0 !important;
+}
+.week-day-items{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+.week-day-items .day-item{
+    flex: 12% 0 1 ;
+}
+th{
+    color:#fff;
+}
+/*
+* start panel styles
+*/
+.panel{
+    border-color: #fe2c39;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+
+}
+.panel .panel-heading{
+    color: #fff;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+    background-color: #fe2c39;
+    padding-top: 2.5rem;
+    padding-bottom: 8rem;
+    font-size: 20px !important;
+    position: relative;
+    border-bottom: 0;
+}
+.panel .panel-heading:after{
+    position: absolute;
+    content: '';
+    border-top: 28px solid #ffffff;;
+    border-right: 28px solid #ffffff;
+    border-bottom: 28px solid #ffffff;
+    border-left: 28px solid #ffffff;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+}
+.input-inline{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+.input-inline input[type='checkbox']{
+    display: none;
+
+}
+.input-inline .checkbox-group .checkbox-label{
+    padding-top: 5px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    border:1px solid #fe2c39;
+    height: 30px;
+    text-align: center;
+    min-width: 40px;
+    transition: 900ms ease;
+}
+
+.input-inline .checkbox-group .checkbox-input:not(:disabled) + .checkbox-label:hover{
+    /*bor\\:#fe2c39;*/
+    cursor: pointer;
+    box-shadow: inset -25px 25px 0px #fe2c39a8;
+    color: #fff;
+
+}
+
+.input-inline .checkbox-group .checkbox-label.checked{
+    background-color:#fe2c39;
+    color: #fff;
+}
+
+.input-inline .checkbox-group .checkbox-input:checked + .checkbox-label {
+    color: #fff;
+    background-color:#fe2c39;
+}
+.input-inline .checkbox-group .checkbox-input:disabled + .checkbox-label{
+    background-color: #902222;
+    color: #bfbfbf;
+}
+.input-inline .checkbox-group:not(:last-child){
+    margin-right:8px;
+}
+
+.tr-duplicate{
+    background:#b2bec3 !important;
+}
+.table-responsive{
+    max-width: 1130px;
+    overflow-x: scroll;
+}
+.form-row{
+    display: flex;
+    flex-flow: row;
+}
+.btn-custome{
+    border-radius: 22px;
+    background:#fe2c39;
+    border-color:#fe2c39;
+    padding: 0.50em 3em;
+    font-size: 18px;
+}
+.btn-custome:hover{
+    background:#f71524;
+    border-color:#fe2c39;
+}
